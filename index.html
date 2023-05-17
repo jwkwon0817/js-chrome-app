@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width-device-width, initial-scale=1.0" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Momentum App</title>
+</head>
+<body class="bg-gray-200">
+	<div class="container mx-auto py-10">
+		<form class="hidden" id="login-form">
+			<div class="flex justify-center mt-20">
+				<input
+					required
+					maxlength="15"
+					type="text"
+					class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
+					placeholder="What is your name?"
+				/>
+				<button type="submit" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-lg">Log In</button>
+			</div>
+		</form>
+		<h2 id="clock" class="text-6xl font-bold text-center mt-10">00:00</h2>
+		<h1 class="hidden text-4xl text-center mt-6" id="greeting" ></h1>
+		<form id="todo-form" class="mt-10">
+			<div class="flex justify-center">
+				<input type="text" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none" placeholder="Write a To Do and Press Enter" required />
+				<button type="submit" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-lg">Add</button>
+			</div>
+		</form>
+		<ul id="todo-list" class="mt-4"></ul>
+		<div id="quote" class="mt-10">
+			<span class="block text-xl text-center mb-2"></span>
+			<span class="block text-lg text-center"></span>
+		</div>
+		<div id="weather" class="mt-4">
+			<span class="block text-lg text-center mb-2">Loading...</span>
+			<span class="block text-xl text-center"></span>
+		</div>
+	</div>
+	<script src="js/greetings.js"></script>
+	<script src="js/clock.js"></script>
+	<script src="js/quotes.js"></script>
+	<script src="js/background.js"></script>
+	<script src="js/todo.js"></script>
+	<script src="js/weather.js"></script>
+</body>
+</html>
